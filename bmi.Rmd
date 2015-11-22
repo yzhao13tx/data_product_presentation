@@ -1,0 +1,65 @@
+---
+title       : Data Product Project
+subtitle    : Shiny Application to Calculate BMI
+author      : YZ
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Project Requirement
+
+1. 5 slides to pitch our idea done in Slidify or Rstudio Presenter
+2. Your presentation pushed to github or Rpubs
+3. A link to your github or Rpubs presentation pasted into the text box below
+4. Your presentation must satisfy the following
+
+- It must be done in Slidify or Rstudio Presenter
+- It must be 5 pages
+- It must be hosted on github or Rpubs
+- It must contained some embedded R code that gets run when slidifying the document
+
+---  
+
+## Introduction to BMI
+The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. 
+
+BMI is a useful measure of overweight and obesity. It is calculated from your height and weight. BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat. The higher your BMI, the higher your risk for certain diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems, and certain cancers.
+
+---  
+
+## Calculation
+Once the user enters the weight (in pounds) and the height (in inches), the BMI is calculated.
+
+```{r}
+Weight<-170 #Should be in pounds
+Height<-70  #Should be in inches (1 foot = 12 inches)
+BMI<-Weight/Height^2*703
+BMI
+```
+
+---
+
+## How to interpret BMI result?
+
+- Normal BMI = 18.5~25
+- Overweight BMI = 25~30
+- Obese BMI > 30
+
+Although BMI can be used for most men and women, it does have some limits:
+
+- It may overestimate body fat in athletes and others who have a muscular build.
+- It may underestimate body fat in older persons and others who have lost muscle.
+
+--- 
+
+## To get more information about BMI
+
+Visit
+http://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm
+
+
